@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import Product from "./Product"
+import { motion } from "motion/react"
 
 import arqitel from "../../../public/videos/arqitel.webm"
 import ttr from "../../../public/videos/ttr.webm"
