@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { motion } from "motion/react"
 
 const Work = () => {
   const [images, setImages] = useState([
