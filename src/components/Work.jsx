@@ -44,10 +44,10 @@ const Work = () => {
   const { scrollYProgress } = useScroll()
 
   scrollYProgress.on("change", data => {
-    function showImages(arr) {
+    function showImages(array) {
       setImages(prev =>
         prev.map((item, index) =>
-          arr.indexOf(index) === -1
+          array.indexOf(index) === -1
             ? { ...item, isActive: false }
             : { ...item, isActive: true }
         )
