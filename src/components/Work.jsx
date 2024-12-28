@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useState } from "react"
 
 const Work = () => {
@@ -7,7 +6,7 @@ const Work = () => {
       url: "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/634ef09178195ce0073e38f3_Refokus%20Tools-1.png",
       top: "50%",
       left: "50%",
-      isActive: false,
+      isActive: true,
     },
     {
       url: "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/634ef0accfe1b3e66bc55462_Refokus%20Tools.png",
