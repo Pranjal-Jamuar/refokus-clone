@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { motion, useMotionValueEvent, useScroll } from "motion/react"
 
 const Work = () => {
   const [images, setImages] = useState([
@@ -6,7 +7,7 @@ const Work = () => {
       url: "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/634ef09178195ce0073e38f3_Refokus%20Tools-1.png",
       top: "50%",
       left: "50%",
-      isActive: true,
+      isActive: false,
     },
     {
       url: "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/634ef0accfe1b3e66bc55462_Refokus%20Tools.png",
@@ -39,6 +40,44 @@ const Work = () => {
       isActive: false,
     },
   ])
+
+  const { scrollYProgress } = useScroll()
+
+  scrollYProgress.on("change", data => {
+    function showImages(array) {
+      setImages(prev =>
+        prev.map((item, index) =>
+          array.indexOf(index) === -1
+            ? { ...item, isActive: false }
+            : { ...item, isActive: true }
+        )
+      )
+    }
+
+    switch (Math.floor(data * 100)) {
+      case 0:
+        showImages([])
+        break
+      case 2:
+        showImages([0])
+        break
+      case 3:
+        showImages([0, 1])
+        break
+      case 5:
+        showImages([0, 1, 2])
+        break
+      case 6:
+        showImages([0, 1, 2, 3])
+        break
+      case 8:
+        showImages([0, 1, 2, 3, 4])
+        break
+      case 9:
+        showImages([0, 1, 2, 3, 4, 5, 6])
+        break
+    }
+  })
 
   return (
     <div className='w-full mt-10'>
