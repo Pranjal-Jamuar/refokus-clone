@@ -14,7 +14,7 @@ const Navbar = () => {
             <a
               key={index}
               href='#'
-              className='font-regular text-sm flex items-center gap-1 cursor-pointer '
+              className='font-regular text-sm flex items-center gap-1 cursor-pointer'
             >
               {index === 1 && (
                 <span
