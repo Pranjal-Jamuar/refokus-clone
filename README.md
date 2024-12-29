@@ -1,31 +1,32 @@
-# Refokus Clone Website Project ✨
+# Refokus Clone Website ✨
 
-This repository contains the source code for a React-based clone website of Refokus. The project aims to replicate the layout, design, and functionalities of the original Refokus website while incorporating additional features and enhancements for an improved user experience.
+This project is a React-based clone of the Refokus website, designed to replicate its layout, design, and functionalities while introducing enhanced features for a smoother and more interactive user experience.
 
 ## Features
 
-- **Component-Based Structure:** The project utilizes React JS to create multiple components mirroring the layout and features of the original website.
-- **Smooth Animations:** Smooth animations are implemented using Locomotive for enhanced scrolling experience, with additional animations added to various components such as the work section, project box, marquee section, and cards section.
-- **Customized Functionality:** Special functionalities include on-scroll animation in the work section to load different images based on scroll values and on-hover video playback animation for the project box component.
+- **React Component Structure:** Modular design replicating the original website.
+- **Smooth Scrolling:** Powered by Locomotive Scroll for a seamless scrolling experience.
+- **Dynamic Animations:** On-scroll image transitions, hover-activated video playback, and animated marquee sections using Framer Motion.
+- **Enhanced Styling:** Styled with Tailwind CSS for a polished, responsive layout.
 
 ## Tech Stack
 
-- **React JS:** Frontend framework for building the website's components and managing state.
-- **Locomotive Scroll:** Library used for smooth scrolling animations.
-- **Framer Motion:** Utilized for creating visually dynamic marquee animations.
-- **Tailwind CSS:** Ensures styling of the website align with the original design.
-- **Vercel:** Deployment platform used to host the live demo of the project.
+- **React JS**: Component-based architecture.
+- **Locomotive Scroll**: Smooth scrolling.
+- **Framer Motion**: Dynamic animations.
+- **Tailwind CSS**: Modern styling framework.
+- **Vercel**: Deployment platform.
 
-## Improvements Over Original Website
+## Improvements
 
-- **Smooth Scrolling:** Addressed laggy scrolling present in the original website by incorporating smooth scrolling functionality.
-- **Optimized Performance:** Improved overall performance compared to the original website, resulting in smoother transitions and faster loading times.
-- **Enhanced Interactivity:** Added interactive features such as hover animations to the cards section, enhancing user engagement.
+- **Lag-Free Scrolling:** Fixed the laggy scrolling issue present in the original site.
+- **Better Performance:** Optimized for faster load times and smoother transitions.
+- **Interactive Elements:** Added hover animations for cards and enhanced user engagement.
 
-## Website's Screenshot
+## Screenshot
 
-![alt text](public/ss.png)
+![Screenshot](public/ss.png)
 
 ## Contributing
 
-Contributions are welcome! Feel free to open issues or submit pull requests to help improve the project.
+Contributions are welcome! Feel free to open issues or submit pull requests to improve the project.
